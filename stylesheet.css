@@ -1,0 +1,21 @@
+.navbar {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    background-color: #dda15e;
+}
+
+.navbar-item {
+   color: #fefae0;
+   font-family:'Courier New', sans serif; 
+   font-size: 16px;
+   padding-left: 110px;
+   padding-right: 110px;
+   text-decoration: none;
+}
+
+a:hover {
+    color: #fefae0;
+    background-color: #bc6c25;
+    display: inline-block;
+}
