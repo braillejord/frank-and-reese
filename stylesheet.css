@@ -8,7 +8,7 @@ body {
 }
 
 #content {
-    background-color: #EEE; 
+    background-color: #EEE;
     margin: auto;
     height: 100vh;
     max-width: 1000px;
@@ -23,17 +23,29 @@ body {
 }
 
 .navbar-item {
-   color: #ED7966;
-   font-size: 20px;
-   padding-left: 25px;
-   padding-right: 25px;
-   text-decoration: none;
+    color: #ED7966;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+a {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 10px;
 }
 
 a:hover {
-    color: #141850;
-    background-color: #EDDCD9;
-    display: inline-block;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23141850' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
 }
 
 h1.intro-paragraph {
@@ -70,20 +82,41 @@ p {
 img {
     display: block;
     margin: auto;
-    max-width:100%;
+    max-width: 100%;
     opacity: 0.5;
     border-radius: 10px;
 }
 
 img:hover {
     opacity: 1.0;
+    transform: scale(1.01,1.01);
 }
 
-h1.personal-paragraph, h1.experience-paragraph, h1.hobbies-paragraph {
+h1.personal-paragraph,
+h1.experience-paragraph,
+h1.hobbies-paragraph {
     color: #141850;
 }
 
-h3.personal-paragraph, h3.experience-paragraph, h3.hobbies-paragraph {
+h3.personal-paragraph,
+h3.experience-paragraph,
+h3.hobbies-paragraph {
     color: #ED7966;
     font-weight: lighter;
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
