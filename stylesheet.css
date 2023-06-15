@@ -1,13 +1,29 @@
+html {
+    background-color: #EDDCD9;
+}
+
+body {
+    margin: 0;
+}
+
+#content {
+    background-color: #EEE; 
+    margin: auto;
+    height: 100vh;
+    width: fit-content;
+    box-shadow: 0 3px 40px 5px rgba(0, 0, 0, 0.2);
+}
+
 .navbar {
     display: block;
     padding: 14px;
     text-align: center;
-    background-color: #dda15e;
+    background-color: #F2EBE9;
 }
 
 .navbar-item {
-   color: #fefae0;
-   font-family:'Courier New', sans serif; 
+   color: #DE5499;
+   font-family: Arial, Arial, Helvetica, sans-serif;
    font-size: 16px;
    padding-left: 110px;
    padding-right: 110px;
@@ -15,7 +31,13 @@
 }
 
 a:hover {
-    color: #fefae0;
-    background-color: #bc6c25;
+    color: #DE5499;
+    background-color: #EDDCD9;
     display: inline-block;
+}
+
+h1.intro-paragraph {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62px;
 }
