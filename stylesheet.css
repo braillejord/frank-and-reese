@@ -23,7 +23,7 @@ body {
 #content {
     background-color: white;
     margin: auto;
-    height: 100vh;
+    height: 100%;
     max-width: 1100px;
     box-shadow: 0 3px 40px 5px rgba(0, 0, 0, 0.2);
 }
@@ -192,14 +192,42 @@ h3.hobbies-paragraph {
     color: white;
 }
 
+#experience-container {
+    background-color: rgba(20, 24, 80, 0.1);
+    color: #141850;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#row-1, #row-2, #row-3, #row-4 {
+    display: inline-table;
+    max-width: 100%;
+}
+
+.experience-date {
+    font-size: 23px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+.experience-company {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* figure out spacing of experience table */
+
 .loop-wrapper {
     margin: 0 auto;
     position: relative;
     display: block;
     width: auto;
-    height: 250px;
+    height: 100px;
     overflow: hidden;
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid #EDDCD9;
     color: #fff;
   }
   .mountain {
@@ -242,15 +270,7 @@ h3.hobbies-paragraph {
     bottom: 0;
     background: url(images/tree.svg) no-repeat;
   }
-  .rock {
-    margin-top: -17%;
-    height: 2%; 
-    width: 2%;
-    bottom: -2px;
-    border-radius: 20px;
-    position: absolute;
-    background: #ddd;
-  }
+  
   .truck, .wheels {
     transition: all ease;
     width: 85px;
@@ -281,10 +301,6 @@ h3.hobbies-paragraph {
   .tree  { animation: tree 3s 0.000s linear infinite; }
   .tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
   .tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
-  .rock  { animation: rock 4s   -0.530s linear infinite; }
-  .truck  { animation: truck 4s   0.080s ease infinite; }
-  .wheels  { animation: truck 4s   0.001s ease infinite; }
-  .truck:before { animation: wind 1.5s   0.000s ease infinite; }
   
   
   @keyframes tree {
@@ -301,11 +317,6 @@ h3.hobbies-paragraph {
     0%   { transform: translate(2750px); }
     50% {}
     100% { transform: translate(-50px); }
-  }
-  
-  @keyframes rock {
-    0%   { right: -200px; }
-    100% { right: 2000px; }
   }
   @keyframes truck {
     0%   { }
