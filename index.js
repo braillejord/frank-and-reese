@@ -35,5 +35,3 @@ form.addEventListener('submit',function() {
 function updateScore() {
     localStorage.setItem("score",String(score));
 };
-
-// HOW TO STOP PAGE FROM REFRESHING WHEN YOU SUBMIT //

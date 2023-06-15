@@ -5,9 +5,9 @@ html {
 
 body {
     margin: 0;
-    animation: fadeInAnimation ease 3s;
+    /* animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes fadeInAnimation {
@@ -201,24 +201,30 @@ h3.hobbies-paragraph {
     box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-#row-1, #row-2, #row-3, #row-4 {
-    display: inline-table;
-    max-width: 100%;
+.row {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 8px;
 }
 
 .experience-date {
+    width: 200px;
     font-size: 23px;
     font-weight: bolder;
     letter-spacing: 4px;
 }
 
 .experience-company {
+    width: 200px;
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
 }
 
-/* figure out spacing of experience table */
+.experience-position, .experience-location {
+    width: 200px;
+}
 
 .loop-wrapper {
     margin: 0 auto;
@@ -263,6 +269,9 @@ h3.hobbies-paragraph {
       620px 0 0 50px #f5cac2;
     animation: hill 4s 2s linear infinite;
   }
+
+  /* stop hill from disappearing early */
+  
   .tree, .tree:nth-child(2), .tree:nth-child(3) {
     position: absolute;
     height: 100px; 
