@@ -101,13 +101,13 @@ img:hover {
 
 h1.personal-paragraph,
 h1.experience-paragraph,
-h1.hobbies-paragraph {
+h1.interests-paragraph {
     color: #141850;
 }
 
 h3.personal-paragraph,
 h3.experience-paragraph,
-h3.hobbies-paragraph {
+h3.interests-paragraph {
     color: #ED7966;
     font-weight: lighter;
 }
@@ -264,10 +264,8 @@ h3.hobbies-paragraph {
       250px 0 0 50px #f5cac2,
       290px 0 0 50px #f5cac2,
       620px 0 0 50px #f5cac2;
-    animation: hill 4s 2s linear infinite;
+    animation: hill 8s 2s linear infinite;
   }
-
-  /* stop hill from disappearing early */
   
   .tree, .tree:nth-child(2), .tree:nth-child(3) {
     position: absolute;
@@ -345,6 +343,6 @@ h3.hobbies-paragraph {
   }
   @keyframes hill {
     100% {
-      transform: translateX(-2000px);
+      transform: translateX(-2750px);
     }
   }
