@@ -12,17 +12,18 @@ const input = document.getElementById('inp');
 const button = document.getElementById('btn');
 
 let scoreElement = document.getElementById('score');
-  
+
 let score = Number(localStorage.getItem("score"));
-if(!score) {
+if (!score) {
     score = 0;
 };
-  
+
 scoreElement.textContent = `score : ${score}`;
-  
-form.addEventListener('submit',function() {
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
     let userAnswer = +input.value;
-    if(correctAnswer === userAnswer) {
+    if (correctAnswer === userAnswer) {
         score++;
         updateScore();
     }
@@ -31,7 +32,12 @@ form.addEventListener('submit',function() {
         updateScore();
     }
 });
-  
+
 function updateScore() {
-    localStorage.setItem("score",String(score));
+    localStorage.setItem("score", String(score));
+    scoreElement.textContent = 'score: ' + score;
+    num1 = Math.floor(Math.random() * 10);
+    num2 = Math.floor(Math.random() * 10);
+    correctAnswer = num1 * num2;
+    questionElement.innerText = `What is ${num1} multipled by ${num2}?`;
 };

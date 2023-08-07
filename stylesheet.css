@@ -1,348 +1,413 @@
 html {
-    background-color: #EDDCDB;
-    font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #EDDCDB; */
+
+  background-color: #FAE5DF;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #content {
-    background-color: white;
-    margin: auto;
-    height: 100%;
-    max-width: 1100px;
-    box-shadow: 0 3px 40px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin: auto;
+  height: 100%;
+  max-width: 1100px;
+  box-shadow: 0 3px 40px 5px rgba(0, 0, 0, 0.2);
 }
 
 #main-content {
-    padding: 50px;
+  padding: 50px;
 }
 
 #navbar {
-    display: block;
-    text-align: right;
-    height: 20px;
+  display: block;
+  text-align: right;
+  height: 20px;
 }
 
 a.navbar-item {
-    color: #ED7966;
-    font-size: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-decoration: none;
+  color: #ED7966;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
 }
 
 a.navbar-item:hover {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23141850' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: 0 100%;
-    background-size: auto 7px;
-    background-repeat: repeat-x;
-    text-decoration: none;
-    color: #141850;
-    padding-bottom: 10px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23141850' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 7px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  color: #141850;
+  padding-bottom: 10px;
 }
 
 a {
-    color:#ED7966;
-    text-decoration-color: #ED7966;
+  color: #ED7966;
+  text-decoration-color: #ED7966;
 }
 
 h1.intro-paragraph {
-    color: #141850;
-    font-size: 62px;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 10px;
+  color: #141850;
+  font-size: 62px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 h2.intro-paragraph {
-    color: #ED7966;
-    font-stretch: ultra-expanded;
-    margin: auto;
-    padding-bottom: 50px;
-    display: flex;
+  color: #ED7966;
+  font-stretch: ultra-expanded;
+  margin: auto;
+  padding-bottom: 50px;
+  display: flex;
 }
 
 p {
-    margin: 0;
-    padding: 2px 10px 0px 10px;
+  margin: 0;
+  padding: 2px 10px 0px 10px;
 }
 
 .blink {
-    animation: blinker 2s linear infinite;
+  animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 }
 
 img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    opacity: 0.5;
-    border-radius: 10px;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  opacity: 0.5;
+  border-radius: 10px;
 }
 
 img:hover {
-    opacity: 1.0;
-    transform: scale(1.01,1.01);
+  opacity: 1.0;
+  transform: scale(1.01, 1.01);
 }
 
 .hover01 figure img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  .hover01 figure:hover img {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
 
 h1.personal-paragraph,
 h1.experience-paragraph,
 h1.interests-paragraph {
-    color: #141850;
+  color: #141850;
 }
 
 h3.personal-paragraph,
 h3.experience-paragraph,
 h3.interests-paragraph {
-    color: #ED7966;
-    font-weight: lighter;
+  color: #ED7966;
+  font-weight: lighter;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 #form {
-    padding: 10px 10px;
-    margin: 5px;
-    background-color: #FAE5DF;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  margin: 5px;
+  background-color: #FAE5DF;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
 }
-  
+
 #score {
-    font-size: 16px;
-    text-align: right;
-    font-weight: 700;
-    color: #ED7966;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 700;
+  color: #ED7966;
 }
-  
+
 #question {
-    color: #ED7966;
-    font-weight: 700;
-    font-size: 23px;
+  color: #ED7966;
+  font-weight: 700;
+  font-size: 23px;
 }
-  
+
 #inp {
-    color: #ED7966;
-    border: 3px solid #ED7966;
-    border-radius: 5px;
-    padding: 15px 0;
-    margin: 10px 0px;
-    display: inline-block;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    outline: none;
+  color: #ED7966;
+  border: 3px solid #ED7966;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin: 10px 0px;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
 }
-  
+
 #inp::placeholder {
-    color: #ED7966;
+  color: #ED7966;
 }
 
 #btn {
-    background-color: #ED7966;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 5px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 15px;
-    font-weight: 700;
-    text-align:center;
-    color: white;
+  background-color: #ED7966;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 5px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  cursor: pointer;
 }
 
 #experience-container {
-    background-color: rgba(20, 24, 80, 0.1);
-    color: #141850;
-    padding: 10px;
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(20, 24, 80, 0.1);
+  color: #141850;
+  padding: 10px;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 8px;
 }
 
 .experience-date {
-    width: 200px;
-    font-size: 23px;
-    font-weight: bolder;
-    letter-spacing: 4px;
+  width: 200px;
+  font-size: 23px;
+  font-weight: bolder;
+  letter-spacing: 4px;
 }
 
 .experience-company {
-    width: 200px;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: italic;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.experience-position, .experience-location {
-    width: 200px;
+.experience-position,
+.experience-location {
+  width: 200px;
 }
 
-.picture-row-1, .picture-row-2 {
-    display: flex;
-    justify-content: space-between;
-    height: 400px;
-    padding-bottom: 10px;
+.picture-row-1,
+.picture-row-2 {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  padding-bottom: 10px;
 }
 
 .row-img {
-    width: 32%;
-    object-fit: cover;
-    height: 100%;
-    opacity: 1;
+  width: 32%;
+  object-fit: cover;
+  height: 100%;
+  opacity: 1;
 }
 
 .loop-wrapper {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: auto;
-    height: 100px;
-    overflow: hidden;
-    border-bottom: 3px solid #EDDCDB;
-    color: #fff;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: auto;
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 3px solid #EDDCDB;
+  color: #fff;
+}
+
+.mountain {
+  position: absolute;
+  right: -900px;
+  bottom: -20px;
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    0 0 0 50px #ED7966,
+    60px 50px 0 70px #ED7966,
+    90px 90px 0 50px #ED7966,
+    250px 250px 0 50px #ED7966,
+    290px 320px 0 50px #ED7966,
+    320px 400px 0 50px #ED7966;
+  transform: rotate(130deg);
+  animation: mtn 20s linear infinite;
+}
+
+.hill {
+  position: absolute;
+  right: -900px;
+  bottom: -50px;
+  width: 400px;
+  border-radius: 50%;
+  height: 20px;
+  box-shadow:
+    0 0 0 50px #f5cac2,
+    -20px 0 0 20px #f5cac2,
+    -90px 0 0 50px #f5cac2,
+    250px 0 0 50px #f5cac2,
+    290px 0 0 50px #f5cac2,
+    620px 0 0 50px #f5cac2;
+  animation: hill 8s 2s linear infinite;
+}
+
+.tree,
+.tree:nth-child(2),
+.tree:nth-child(3) {
+  position: absolute;
+  height: 100px;
+  width: 35px;
+  bottom: 0;
+  background: url(images/tree.svg) no-repeat;
+}
+
+.truck,
+.wheels {
+  transition: all ease;
+  width: 85px;
+  margin-right: -60px;
+  bottom: 0px;
+  right: 50%;
+  position: absolute;
+}
+
+.truck {
+  background: url(images/truck.svg) no-repeat;
+  background-size: contain;
+  height: 60px;
+}
+
+.truck:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #f5cac2,
+    -35px 18px 0 1.5px #f5cac2;
+}
+
+.wheels {
+  background: url(images/wheels.svg) no-repeat;
+  height: 15px;
+  margin-bottom: 0;
+}
+
+.tree {
+  animation: tree 3s 0.000s linear infinite;
+}
+
+.tree:nth-child(2) {
+  animation: tree2 2s 0.150s linear infinite;
+}
+
+.tree:nth-child(3) {
+  animation: tree3 8s 0.050s linear infinite;
+}
+
+
+@keyframes tree {
+  0% {
+    transform: translate(1350px);
   }
-  .mountain {
-    position: absolute;
-    right: -900px;
-    bottom: -20px;
-    width: 2px;
-    height: 2px;
-    box-shadow: 
-      0 0 0 50px #ED7966,
-      60px 50px 0 70px #ED7966,
-      90px 90px 0 50px #ED7966,
-      250px 250px 0 50px #ED7966,
-      290px 320px 0 50px #ED7966,
-      320px 400px 0 50px #ED7966
-      ;
-    transform: rotate(130deg);
-    animation: mtn 20s linear infinite;
+
+  50% {}
+
+  100% {
+    transform: translate(-50px);
   }
-  .hill {
-    position: absolute;
-    right: -900px;
-    bottom: -50px;
-    width: 400px;
-    border-radius: 50%;
-    height: 20px;
-    box-shadow: 
-      0 0 0 50px #f5cac2,
-      -20px 0 0 20px #f5cac2,
-      -90px 0 0 50px #f5cac2,
-      250px 0 0 50px #f5cac2,
-      290px 0 0 50px #f5cac2,
-      620px 0 0 50px #f5cac2;
-    animation: hill 8s 2s linear infinite;
+}
+
+@keyframes tree2 {
+  0% {
+    transform: translate(650px);
   }
-  
-  .tree, .tree:nth-child(2), .tree:nth-child(3) {
-    position: absolute;
-    height: 100px; 
-    width: 35px;
-    bottom: 0;
-    background: url(images/tree.svg) no-repeat;
+
+  50% {}
+
+  100% {
+    transform: translate(-50px);
   }
-  
-  .truck, .wheels {
-    transition: all ease;
-    width: 85px;
-    margin-right: -60px;
-    bottom: 0px;
-    right: 50%;
-    position: absolute;
+}
+
+@keyframes tree3 {
+  0% {
+    transform: translate(2750px);
   }
-  .truck {
-    background: url(images/truck.svg) no-repeat;
-    background-size: contain;
-    height: 60px;
+
+  50% {}
+
+  100% {
+    transform: translate(-50px);
   }
-  .truck:before {
-    content: " ";
-    position: absolute;
-    width: 25px;
-    box-shadow:
-      -30px 28px 0 1.5px #f5cac2,
-       -35px 18px 0 1.5px #f5cac2;
+}
+
+@keyframes truck {
+  0% {}
+
+  6% {
+    transform: translateY(0px);
   }
-  .wheels {
-    background: url(images/wheels.svg) no-repeat;
-    height: 15px;
-    margin-bottom: 0;
+
+  7% {
+    transform: translateY(-6px);
   }
-  
-  .tree  { animation: tree 3s 0.000s linear infinite; }
-  .tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
-  .tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
-  
-  
-  @keyframes tree {
-    0%   { transform: translate(1350px); }
-    50% {}
-    100% { transform: translate(-50px); }
+
+  9% {
+    transform: translateY(0px);
   }
-  @keyframes tree2 {
-    0%   { transform: translate(650px); }
-    50% {}
-    100% { transform: translate(-50px); }
+
+  10% {
+    transform: translateY(-1px);
   }
-  @keyframes tree3 {
-    0%   { transform: translate(2750px); }
-    50% {}
-    100% { transform: translate(-50px); }
+
+  11% {
+    transform: translateY(0px);
   }
-  @keyframes truck {
-    0%   { }
-    6%   { transform: translateY(0px); }
-    7%   { transform: translateY(-6px); }
-    9%   { transform: translateY(0px); }
-    10%   { transform: translateY(-1px); }
-    11%   { transform: translateY(0px); }
-    100%   { }
+
+  100% {}
+}
+
+@keyframes wind {
+  0% {}
+
+  50% {
+    transform: translateY(3px)
   }
-  @keyframes wind {
-    0%   {  }
-    50%   { transform: translateY(3px) }
-    100%   { }
+
+  100% {}
+}
+
+@keyframes mtn {
+  100% {
+    transform: translateX(-2000px) rotate(130deg);
   }
-  @keyframes mtn {
-    100% {
-      transform: translateX(-2000px) rotate(130deg);
-    }
+}
+
+@keyframes hill {
+  100% {
+    transform: translateX(-2750px);
   }
-  @keyframes hill {
-    100% {
-      transform: translateX(-2750px);
-    }
-  }
+}
